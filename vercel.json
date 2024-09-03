@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "fotd/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/fotd",
+      "dest": "fotd/index.py"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/fotd",
+      "schedule": "0 12 * * *"
+    }
+  ]
+}
