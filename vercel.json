@@ -12,7 +12,7 @@
       "dest": "fotd/index.py"
     }
   ],
-  "crons": [
+  "disabled_crons": [
     {
       "path": "/fotd",
       "schedule": "0 12 * * *"
